@@ -1,0 +1,133 @@
+========= 电镀生产资料查询工具Ver.2.0.9beta=========
+* Author: Jones
+* Version: 2.0.9beta
+* Created date: 2023/02/01
+* Released date: 2023/12/15
+
+目录
+<a href="#〇">〇、写在前面</a>
+<a href="#一">一、应用简介</a>
+<a href="#二">二、功能和特点</a>
+<a href="#三">三、使用的开放源代码</a>
+<a href="#四">四、更新日志</a>
+
+<h3 id="〇">〇、写在前面</h3>
+    1. 留意机台<b>IP地址</b>可能发生变化。发生时请及时到<b>“设置”</b>里更新IP地址。
+    2. 由于机台数量多且差异较大，已内置的筛选可能不完整，请使用☆自定义筛选☆补充。
+    3. 中文翻译多为机器翻译，不太准确，且数量过多，无法完全逆向，留意。
+
+<h3 id="一">一、应用简介：</h3>
+    电镀生产资料查询工具，主要是以基于Google Chrome <sup>®</sup> 57.0浏览器、PHP封装的开源软件 <b>phpdesktop<sup>®</sup></b> 为运行环境，主要是用PHP、JavaScript、HTML等实现功能，本质上是以本地为服务器的网站。目的是为了方便地读取AAMI<sup>®</sup>电镀机台上webroot里生产数据，以更直观、更方便的方式展示。
+
+<h3 id="二">二、功能和特点：</h3>
+(1) 重绘DataLog生产数据曲线。
+(2) 分类筛选DataLog生产数据。
+(3) 把源数据翻译为中文显示。
+(4) 截图重绘图像，或者下载表格筛选的数据。
+(5) 图形查看和表格查看切换。
+(6) 查看/筛选每月的问题记录并下载。
+(7) 查看/筛选每月的开关机事件并下载。
+(8) 查看/筛选每天的开停机记录并下载。
+(9) 查看/筛选每月的停机原因记录并下载。
+(10) 查看/筛选每年的机械参数修改记录并下载。
+(11) 查看/筛选每年的产品参数修改记录并下载。
+(12) 查看机台主页、问题记录、生产状态记录、电流密度ASD等源页面。
+(13) 尽可能统一日期格式为“年/月/日”格式。
+
+<h3 id="三">三、使用的开放源代码：</h3>
+(1) 可免费使用的有：
+1. <b>phpdesktop</b> ： 提供一种使用 PHP、HTML5、JavaScript 和 SQLite 等 Web 技术开发桌面 GUI 应用程序的方法。
+    官方文档：https://github.com/cztomczak/phpdesktop/wiki
+    开源地址：https://github.com/cztomczak/phpdesktop
+    开源许可文件：https://github.com/cztomczak/phpdesktop/blob/master/src/license.txt
+    开源许可类型：BSD 3-clause license、PHP License 3.0.1、MIT license、BSD 2-clause license
+2. <b>PHP</b> ：PHP是世界上最好的编程语言
+    官方网站：https://www.php.net/
+    官方文档：https://www.php.net/docs.php
+    开源地址：https://www.php.net/releases/
+    开源许可类型：PHP License 3.0.1
+3. <b>echart.js</b>： 百度团队研发的图表js插件，利用HTML+js实现折线图、饼状图、热点图、3d图形等等，可在PC和移动端显示，加载速度快，功能丰富。
+    官方网站：https://echarts.apache.org/
+    官方文档：https://echarts.apache.org/handbook/zh/get-started/
+    开源地址：https://github.com/apache/echarts
+    开源许可文件：https://github.com/apache/echarts/blob/master/LICENSE
+    开源许可类型：Apache License v2.0
+4. <b>layui.js</b>：是一套开源的 Web UI 解决方案，采用自身经典的模块化规范，并遵循原生 HTML/CSS/JS 的开发方式，极易上手，拿来即用。其风格简约轻盈，而组件优雅丰盈，从源代码到使用方法的每一处细节都经过精心雕琢，非常适合网页界面的快速开发。
+    官方网站：https://layui.github.io/
+    官方文档：https://layui.gitee.io/v2/docs/
+    开源地址：https://gitee.com/layui/layui
+    开源许可文件：https://gitee.com/layui/layui/blob/main/LICENSE
+    开源许可类型：MIT License
+5. jquery.js：基于javascript类库的框架，使用起来比较方便， 简化了用户与浏览器的交互， 提高了系统的性能和开发效率。
+    官方网站：https://jquery.com/
+    学习文档：https://learn.jquery.com/about-jquery/
+    开源许可文件：https://cdn.jsdelivr.net/npm/jquery@3.5.1/LICENSE.txt
+    开源许可类型：MIT License 
+6. <b>handsontable.js</b>：是一个 JavaScript 数据网格组件，它为您的应用程序带来众所周知的电子表格外观。可用于构建类似 web 应用程序的 excel。
+    官方网站：https://handsontable.com/
+    官方文档：https://handsontable.com/docs/6.2.0/tutorial-introduction.html
+    开源地址：https://github.com/handsontable/handsontable
+    开源许可文件：
+    开源许可类型：MIT License
+    <p style="color:red;font-size:18px;font-weight:800">注意：handsontable.js的v7.0以上版本需要购买商业授权，这里是v6.2.2版本。详见https://github.com/handsontable/handsontable/releases/tag/7.0.0和https://handsontable.com/docs/react-data-grid/license-key/</p>
+(2) 需<b>商业授权</b>的有：
+
+<h3 id="四">四、更新日志：</h3>
+(1) 创建：2023年2月1日 22:56
+(2) v0.1：
+- 新增 机台状态页。
+- 新增 连接状态页。
+- 新增 电导率状态图形视图。
+- 新增 机台配置表。
+- 新增 机台选择。
+- 实现 webroot/*.csv单个文件读取
+(3) v0.2.4 ：
+- 实现 多个文件访问逻辑。
+- 实现 多个时间处理。
+- 新增 生产数据查看选项。
+- 新增 问题记录选项。
+- 新增 图形/表格视图切换。
+- 新增 开关机事件选项。
+- 新增 开停机查询选项。
+- 新增 停机原因选项。
+- 新增 机器参数选项。
+- 新增 产品参数选项。
+- 优化 选中功能。
+(4) v0.3.5：
+- 新增 DataLog分类筛选选项。
+- 新增 主页选项。
+- 新增 DataLogViewer选项。
+- 新增 ErrorLogViewer选项。
+- 新增 ASD选项。
+- 优化 机台配置表。
+(5) v0.4.2：
+- 新增 ~Debuger选项。
+- 新增 -PARAMETER-筛选选项。
+- 新增 中文显示。
+(6) v0.5.5：
+- 新增 ~zh_help选项。
+- 新增 中/英文显示切换。
+- 新增 正常模式/~Debuger/~zh_help功能切换。
+- 优化 报错提示逻辑。
+(7) v0.6.9：
+- 优化 机台选择功能。
+- 优化 日期选择功能。
+- 优化 图形视图。
+(8) v0.7.3：比较完整的可用版本。2023年6月20日
+- 优化 表格视图。
+- 优化 连接可用性判断。
+- 弃用 机台状态查看功能。
+- 弃用 连接状态查看功能。
+- 新增 DataLog线体筛选。
+(9) v0.8.7：
+- 优化 一些需要显示的表头。
+- 发布 预览版本。
+(10) v0.9.8：
+- 优化 中文翻译。
+(11) v1.0.1：
+- 发布 正式版本。
+(12) v1.0.8beta:
+- 优化 已知问题。
+(13) v2.0.9beta:
+- 优化 已知问题。
+- 新增 数据库管理。
