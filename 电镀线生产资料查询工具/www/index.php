@@ -559,12 +559,11 @@ $random = time();
             ?>
             <li><a href="javascript:setCookies([['type', 'Temperatures'],['func', 'DataLog']]);" id="idTemperatures" title="显示该机台所有温度">Temperatures</a></li>
         </ul>
-        <label for="">-DataLog 选项-：</label>
         <?
         if ($_COOKIE['type'] == 'Current' or $_COOKIE['type'] == 'Voltage' or $_COOKIE['type'] == 'Speed' or $_COOKIE['type'] == 'Temperature' or $_COOKIE['type'] == 'FlowRate' or $_COOKIE['type'] == 'Conductivity' or $_COOKIE['type'] == 'EBOtime' or $_COOKIE['type'] == 'Pressure' or $_COOKIE['type'] == 'AmpMin' or $_COOKIE['type'] == 'OnOffPumpSpeed' or $_COOKIE['type'] == 'Temperatures') {
-            echo '<br>
-        <label for="" style="color:red">选线体</label>
-        <select name="lineSelect" id="lineSelect">';
+            echo '
+        <label for="" style="color:red;font-weight:800;">选线体</label>
+        <select name="lineSelect" id="lineSelect" style="background-color:#ffcfc0;">';
             if (!empty($_COOKIE['line']) && $_COOKIE['line'] == 'lineall') {
                 echo '<option value="lineall" title="显示相应线体" selected>Line 全部</a></option>';
             } else {
@@ -602,6 +601,8 @@ $random = time();
         }
         echo '</select>';
         ?>
+        <label for="">-DataLog 选项-：</label>
+
         <script>
             $('#lineSelect').change(function() {
                 setCookie('line', this.value, 10080);
