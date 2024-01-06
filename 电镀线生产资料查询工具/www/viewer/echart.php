@@ -129,15 +129,15 @@ if ($_COOKIE['type'] == 'DIY') {
             top: 'center',
             textStyle: {
                 fontSize: 18,
-                color: 'rgba(127,127,127,0.3)',
+                color: 'rgba(127,127,127,0.4)',
                 fontFamily: '',
                 // fontWeight: 'bolder',
                 lineHeight: 18,
             },
             subtextStyle: {
-                fontSize: 16,
-                color: 'rgba(127,127,127,0.2)',
-                lineHeight: 16,
+                fontSize: 18,
+                color: 'rgba(127,127,127,0.4)',
+                lineHeight: 18,
             },
             itemGap: 10
         },
