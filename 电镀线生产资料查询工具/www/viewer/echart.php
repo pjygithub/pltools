@@ -410,7 +410,7 @@ if ($_COOKIE['type'] == 'DIY') {
                     echo "symbolRotate: getRnd(0, 360),\n";
                     echo "symbolOffset: [0, 0],\n";
                     echo "showSymbol: true,\n";
-                    echo "lineStyle: {width:2},\n";
+                    echo "lineStyle: {width:" . $echartlinewidth . "},\n";
                     if ($highEchart == 1) {
                         echo "emphasis:{disabled:false, scale:true,focus:'series',},\n"; // 设置高亮
                     }

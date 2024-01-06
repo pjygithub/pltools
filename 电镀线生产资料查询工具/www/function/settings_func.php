@@ -50,6 +50,12 @@ if (
   setConfig1('$echartShowTime = ' . $echartShowTime . '', '$echartShowTime = ' . $_POST['echartShowTime'] . '');
 }
 if (
+  $_POST['echartlinewidth'] != $echartlinewidth or
+  !empty($_POST['echartlinewidth'])
+) {
+  setConfig1('$echartlinewidth = ' . $echartlinewidth . '', '$echartlinewidth = ' . $_POST['echartlinewidth'] . '');
+}
+if (
   $_POST['echartShowFloatNum'] != $echartShowFloatNum or
   !empty($_POST['echartShowFloatNum'])
 ) {

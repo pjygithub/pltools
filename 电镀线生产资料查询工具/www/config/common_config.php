@@ -73,7 +73,7 @@ function toUrldecode($str)
 // $status_name = 'aam-intl\p02public2';
 $status_name = "aam-intl\p02public";
 $status_name = toUrldecode($status_name);
-$status_password = "P02369258147";
+$status_password = "P02258369147";
 $status_password = toUrldecode($status_password);
 $status_url = "amcnts19.amcex.asmpt.com/PltLinestate/ViewState.aspx";
 $echartShowTime = 450;
@@ -162,4 +162,5 @@ $calendarMark = "'0-0-15': '月中',
 $highEchart = 1;
 $tableType = "handsontable6";
 $usezh_cn = 2;
-$Release = 1; //1为发行版，0为测试版
+$echartlinewidth = 4;
+$Release = 0; //1为发行版，0为测试版

@@ -88,6 +88,7 @@ $machines_arr = json_decode($machines_str, true);
         <h2>其他设置：</h2>
         <label for="echartShowTime">图表默认显示长度（分钟）：</label><input type="number" name="echartShowTime" id="echartShowTime" value="<?php echo $echartShowTime ?>" step="1" min="10" max="3000"><label for="echartShowTime"> 比如：450个数据点。可输入10~3000</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
         <label for="echartShowFloatNum">图表显示小数位数：</label><input type="number" name="echartShowFloatNum" id="echartShowFloatNum" value="<?php echo $echartShowFloatNum ?>" step="1" min="0" max="6"><label for="echartShowFloatNum"> 比如：3是0.001，0为整数。可输入0~6</label><br>
+        <label for="echartlinewidth">图表线条宽度：</label><input type="number" name="echartlinewidth" id="echartlinewidth" value="<?php echo $echartlinewidth ?>" step="1" min="1" max="20"><label for="echartlinewidth"> 可输入1~10</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
         <div class="layui-form">
             运行图表使用高亮显示（鼠标悬停在线条或图例上会突出显示）：
             <?
