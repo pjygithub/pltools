@@ -560,7 +560,7 @@ $random = time();
             <li><a href="javascript:setCookies([['type', 'Temperatures'],['func', 'DataLog']]);" id="idTemperatures" title="显示该机台所有温度">Temperatures</a></li>
         </ul>
         <?
-        if ($_COOKIE['type'] == 'Current' or $_COOKIE['type'] == 'Voltage' or $_COOKIE['type'] == 'Speed' or $_COOKIE['type'] == 'Temperature' or $_COOKIE['type'] == 'FlowRate' or $_COOKIE['type'] == 'Conductivity' or $_COOKIE['type'] == 'EBOtime' or $_COOKIE['type'] == 'Pressure' or $_COOKIE['type'] == 'AmpMin' or $_COOKIE['type'] == 'OnOffPumpSpeed' or $_COOKIE['type'] == 'Temperatures') {
+        if ($_COOKIE['type'] == 'Current' or $_COOKIE['type'] == 'Voltage' or $_COOKIE['type'] == 'Speed' or $_COOKIE['type'] == 'Temperature' or $_COOKIE['type'] == 'FlowRate' or $_COOKIE['type'] == 'Conductivity' or $_COOKIE['type'] == 'EBOtime' or $_COOKIE['type'] == 'Pressure' or $_COOKIE['type'] == 'AmpMin' or $_COOKIE['type'] == 'OnOffPumpSpeed' or $_COOKIE['type'] == 'Temperatures' or $_COOKIE['func']== 'ErrorLog' OR $_COOKIE['func']== 'EventLog' OR $_COOKIE['func']== 'downtimelog' OR $_COOKIE['func']== 'ProductParameterLog' ) {
             echo '
         <label for="" style="color:red;font-weight:800;">选线体</label>
         <select name="lineSelect" id="lineSelect" style="background-color:#ffcfc0;">';
