@@ -102,6 +102,12 @@ function get_data_lines($Dates, $dirname, $format_normal, $format_rsa)
                 // IO:
                 $re = '/IO:[0-9A-Za-z &#_]{0,}[,][0-9A-Za-z &#_]{0,}/m';
                 $lines_j = redot($lines_j, $re, ',', '，');
+                // (1,2,3)/(1,2,abc)
+                $re = '/[(][0-9A-Za-z]{0,}[,][0-9A-Za-z]{0,}[,][0-9A-Za-z]{0,}[)]/m';
+                $lines_j = redot($lines_j, $re, ',', '，');
+                // (2,3)/(2,abc)
+                $re = '/[(][0-9A-Za-z]{0,}[,][0-9A-Za-z]{0,}[)]/m';
+                $lines_j = redot($lines_j, $re, ',', '，');
                 if ($j != 0 and $lines_j != "" and $lines_j != " " and strlen($lines_j) > 0 and $machines_arr[$index]['type'] != "RSA" and $dirname != 'ErrorLog' and $dirname != 'EventLog' and $dirname != 'ParameterLog/Machine' and $dirname != 'ParameterLog/Product') {
                     array_push($data_lines, substr($Dates[$i], 1, 4) . '/' . substr($Dates[$i], 6, 2) . '/' . substr($Dates[$i], 9, 2) . ' ' . $lines_j);
                 } else {
